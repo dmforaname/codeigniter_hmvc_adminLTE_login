@@ -87,5 +87,5 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 #db cred
 define('DB_USER','root');
 define('DB_PASS','');
-define('DB_NAME','dmc_db');
+define('DB_NAME','my_db');
 define('DB_HOST','localhost');
