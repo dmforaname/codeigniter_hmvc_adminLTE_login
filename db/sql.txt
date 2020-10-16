@@ -18,7 +18,13 @@ CREATE TABLE `tb_user` (
   `created_at` datetime DEFAULT NULL,
   `created_by` int(11) DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
-  `updated-by` int(11) DEFAULT NULL,
+  `updated_by` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_name` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+INSERT INTO `tb_user` (`id`, `username`, `pass`, `level`, `regdate`, `status`, `created_at`, `created_by`, `updated_at`, `updated_by`)
+VALUES
+	(1, 'diaz', '$2y$10$K1nAxNEk8J8nMT86k2DeuuSe5GpF/MdUSgsOYvE6D/60hSGWsMnHW', 1, '2020-03-12 11:28:54', 'active', NULL, NULL, NULL, NULL);
+
+##pass: qwertyui
